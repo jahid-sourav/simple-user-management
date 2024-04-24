@@ -4,7 +4,9 @@ function UseUserHooks() {
   const { data, isLoading, refetch } = useQuery({
     queryKey: ["users"],
     queryFn: async () => {
-      const response = await fetch(`http://localhost:5000/users`);
+      const response = await fetch(
+        `https://simple-user-management-server.vercel.app/users`
+      );
       const data = await response.json();
       return data;
     },
