@@ -24,7 +24,9 @@ export const router = createBrowserRouter([
         path: "/edit-user/:id",
         element: <EditUser />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/users/${params.id}`),
+          fetch(
+            `https://simple-user-management-server.vercel.app/users/${params.id}`
+          ),
       },
       {
         path: "/another",
