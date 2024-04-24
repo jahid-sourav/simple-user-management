@@ -24,7 +24,7 @@ function AddUser() {
           photoURL: photoUrl,
         });
         // setUser({ ...result.user, displayName: name, photoURL: photoUrl });
-        fetch("http://localhost:5000/users", {
+        fetch("https://simple-user-management-server.vercel.app/users", {
           method: "POST",
           headers: {
             "content-type": "application/json",

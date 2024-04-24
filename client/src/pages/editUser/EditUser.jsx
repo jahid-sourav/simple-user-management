@@ -27,7 +27,7 @@ function EditUser() {
     const id = user._id;
     const updatedUser = { name, email, password, photoUrl, gender, status };
 
-    fetch(`http://localhost:5000/users/${id}`, {
+    fetch(`https://simple-user-management-server.vercel.app/users/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
